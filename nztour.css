@@ -1,0 +1,744 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
+
+/*** The new CSS Reset - version 1.4.1 (last updated 23.11.2021) ***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+  font-family: "Mulish", sans-serif;
+  margin: 0 auto;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly. */
+:where([contenteditable]) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+}
+
+/*Home*/
+
+#home {
+  position: relative;
+  width: 100vw;
+  height: 900px;
+  background-image: url("img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.visu_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Antic Didone", serif;
+  font-size: 6em;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.logo {
+  min-width: 200px;
+}
+
+.nav {
+  max-width: 1400px;
+  width: 80%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+#myLink {
+  display: flex;
+}
+
+.nav li {
+  padding-left: 100px;
+  cursor: pointer;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav_right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_mobile {
+  display: none;
+}
+
+.language {
+  margin-left: 50px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 0 0 2px 5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*Fetures*/
+#features {
+  width: 80%;
+  max-width: 1400px;
+}
+
+.article {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+}
+
+.article_web_img {
+  width: 45%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.article_mobile_img {
+  display: none;
+}
+
+.text_area_l {
+  padding-right: 100px;
+  margin: 0;
+}
+
+.text_area_r {
+  padding-left: 100px;
+  margin: 0;
+}
+
+.font_cate {
+  font-weight: 800;
+  letter-spacing: 0.3em;
+}
+
+.font_cate_underline {
+  width: 30px;
+  border-bottom: 1px solid gray;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.title {
+  font-family: "Antic Didone", serif;
+  font-size: 46px;
+  padding-top: 50px;
+}
+
+.subtext {
+  padding-top: 50px;
+}
+
+/* stay */
+
+#stay {
+  padding-top: 100px;
+}
+
+.stay_bg {
+  position: relative;
+  width: 100vw;
+  height: 900px;
+  background-image: url("./img/stay.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#form {
+  width: 80%;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.274);
+}
+
+#item_list_container {
+  position: relative;
+  width: 80%;
+  max-width: 1400px;
+}
+
+#item_list {
+  padding-top: 150px;
+  width: 100%;
+}
+
+.items {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 50px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.item_img {
+  width: 350px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.item_desc {
+  padding: 0 50px;
+  flex: 1;
+}
+
+.item_title {
+  font-family: "Antic Didone", serif;
+  font-size: 46px;
+}
+
+.modal_item_title {
+  font-family: "Antic Didone", serif;
+  font-size: 46px;
+}
+
+.item_subtext {
+  padding-top: 20px;
+}
+
+.item_icon {
+  padding-top: 50px;
+}
+.item i {
+  padding-right: 30px;
+}
+
+.item_pp {
+  color: #a4a4a4;
+  margin-bottom: 20px;
+}
+
+.item_night {
+  color: #a4a4a4;
+}
+
+.item_right {
+  text-align: right;
+}
+
+.item_price,
+.mobile_item_price {
+  font-size: 24px;
+  font-weight: 800;
+  color: red;
+}
+
+.modalp_item_price {
+  font-size: 24px;
+  font-weight: 800;
+  color: red;
+  padding-top: 20px;
+}
+
+.item_booking {
+  padding: 20px;
+  border: 1px solid #a4a4a4;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.item_booking:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile_item_buttom,
+.mobile_item_booking {
+  display: none;
+}
+
+#overlay_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#overlay_img {
+  width: 100%;
+}
+
+.modal_content {
+  width: 70%;
+  height: 100%;
+  padding: 50px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+  overflow: scroll;
+  text-align: center;
+}
+
+.modal_desc {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.modal_item_desc {
+  width: 40%;
+  text-align: left !important;
+}
+
+.modal_item_icon {
+  margin-top: 30px;
+}
+
+.price_calculator {
+  width: 50%;
+  border: 1px solid #a4a4a4;
+  border-radius: 8px;
+}
+
+.bt_search {
+  padding: 20px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#modal_x {
+  position: absolute;
+  top: 2%;
+  right: 2.5%;
+  font-size: 25px;
+}
+
+#bt_reserve {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.date_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dateInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.dateInput input {
+}
+
+.guestInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+#guest_number {
+  width: 70%;
+}
+
+.bt_submit {
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgb(216, 216, 216);
+}
+
+label {
+  margin: 0;
+}
+input {
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  padding: 12px 10px;
+  text-align: center;
+  margin: 0;
+}
+
+#result {
+  margin: 30px auto 0 auto;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 30px;
+}
+
+.result_daysGuests {
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d8d8d8;
+  justify-content: space-between;
+}
+
+.totalPrice {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#days,
+#guests {
+  font-weight: bold;
+}
+
+#price {
+  color: red;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.hidden {
+  display: none;
+}
+
+.modalp {
+  padding-top: 20px;
+}
+#modal_price_txt {
+  color: #a4a4a4;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#contact {
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/bg.png);
+  padding: 50px;
+}
+
+.contact_visu_text {
+  font-family: "Antic Didone", serif;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+
+#contact form {
+  width: 60%;
+  max-width: 600px;
+}
+
+#contact input {
+  margin-bottom: 20px;
+  background-color: white;
+  text-align: left;
+}
+
+#contact_message {
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  padding: 12px 10px;
+  margin: 0;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#contact_submit {
+  margin: 0 auto;
+  cursor: pointer;
+  width: 120px;
+  height: 60px;
+  border-radius: 0;
+  text-align: center !important;
+  background-color: transparent !important;
+  color: white;
+}
+
+.sns {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+#contact_logo {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.6;
+}
+
+/*----Media Quary----*/
+
+@media only screen and (max-width: 980px) {
+  .modal_content {
+    width: 100%;
+  }
+
+  .modal_desc {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .price_calculator {
+    width: 100%;
+    order: 2;
+  }
+
+  #overlay_img {
+    width: 100%;
+  }
+
+  .modal_item_desc {
+    width: 100%;
+    order: 1;
+    text-align: center !important;
+  }
+  .modal_item_icon {
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid #d8d8d8;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .modal_item_icon i {
+    padding-right: 20px;
+  }
+
+  .modal_item_icon .item_pp {
+    margin: 0;
+  }
+
+  .modal_item_icon .item_night {
+    margin: 0;
+    padding-left: 50px;
+  }
+
+  #bt_reserve {
+    position: fixed;
+    bottom: 0;
+    left: 38%;
+  }
+
+  .modalp_item_price {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 50px;
+    font-size: 24px;
+    font-weight: 800;
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+  .text_area_l,
+  .text_area_r {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .article_web_img {
+    display: none;
+  }
+
+  .article_mobile_img {
+    display: block;
+    padding-top: 50px;
+  }
+
+  .font_cate_underline {
+    margin: 0 auto;
+  }
+
+  #myLink {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 25%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+
+  .nav li {
+    padding: 50px 0;
+    font-size: 1.2em;
+  }
+
+  .nav_right {
+    display: none;
+  }
+
+  .nav_mobile {
+    display: block;
+  }
+
+  .logo {
+    position: absolute;
+    top: 50px;
+    left: 10%;
+  }
+
+  .nav_hamberger {
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    top: 50px;
+    right: 10%;
+  }
+
+  .nav_x {
+    display: none;
+    z-index: 1;
+    font-size: 25px;
+    position: absolute;
+    top: 50px;
+    right: 10%;
+  }
+
+  #item_list {
+    width: 100%;
+  }
+
+  .items {
+    border: none;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .item_img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .item_desc {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .item_icon {
+    display: none;
+  }
+
+  .mobile_item_buttom {
+    display: block;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    border-top: 1px solid #a4a4a4;
+  }
+
+  .mobile_item_buttom i {
+    padding-right: 20px;
+  }
+
+  .mobile_item_booking {
+    display: none;
+    color: white;
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .item_pp {
+    margin-bottom: 0;
+  }
+
+  .item_booking {
+    display: block;
+    margin: 0;
+  }
+
+  .item_price {
+    display: none;
+  }
+  .item_right {
+    width: 100%;
+  }
+
+  .mobile_item_price {
+    display: block;
+  }
+}

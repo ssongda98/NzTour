@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nztour.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- import jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- import flatpickr styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <!-- import flatpickr js -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+</head>
+
+<body>
+    <div id="home">
+        <div class="nav">
+            <a href="#home"><img src="./img/logo.png" alt="" srcset="" class="logo"></a>
+            <img src="./img/visu_text.png" alt="" srcset="" class="visu_text">
+            <ul id="myLink">
+                <li><a href="#features">Fetures</a></li>
+                <li><a href="#stay">Stay</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="nav_right">
+                <i class="fas fa-search"></i>
+                <div class="language">English<i class="arrow down"></i></div>
+            </div>
+            <div class="nav_mobile">
+                <div class="nav_hamberger" id="nav_hamberger"><i class="fa fa-bars"></i></div>
+                <div class="nav_x" id="nav_x"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+
+    </div>
+    <div id="features">
+        <div class="article">
+            <div class="text_area_l">
+                <div class="font_cate">FETURES</div>
+                <div class="font_cate_underline"></div>
+                <div class="title">Rotorua</div>
+                <img src="./img/rotorua.jpg" alt="" srcset="" class="article_mobile_img">
+                <div class="subtext">
+                    From crystal-clear streams and magical forests, to epic biking trails and thermal mud pools, Rotorua
+                    has it all. The city offers a raft of attractions and experiences for everyone from
+                    adventure-seekers to those just looking to unwind.
+                    <br><br>Sitting within the Pacific Rim of Fire, Rotorua is a geothermal wonderland with bubbling mud
+                    pools, clouds of steam, and natural hot springs perfect for bathing and relaxing in. After
+                    marvelling at the distinctive landscapes and volcanic activity within a geothermal park, enjoy a
+                    simple soak in a natural hot stream or indulge in a wellness getaway at a luxurious spa.
+                </div>
+            </div>
+            <img src="./img/rotorua.jpg" alt="" srcset="" class="article_web_img">
+        </div>
+        <div class="article">
+            <img src="./img/tekapo.jpg" alt="" srcset="" class="article_web_img">
+            <div class="text_area_r">
+                <div class="font_cate">FETURES</div>
+                <div class="font_cate_underline"></div>
+                <div class="title">Lake Tekapo</div>
+                <img src="./img/tekapo.jpg" alt="" srcset="" class="article_mobile_img">
+                <div class="subtext">
+                    Lake Tekapo is about three hours drive south-west of Christchurch in the Mackenzie Basin. The
+                    township faces north across the remarkable turquoise coloured lake to the mountainous drama of the
+                    Southern Alps. Lake Tekapo gets its intense milky-turquoise colour from the fine rock-flour (ground
+                    by glaciers) which is suspended in the water.
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <div class="text_area_l">
+                <div class="font_cate">FETURES</div>
+                <div class="font_cate_underline"></div>
+                <div class="title">Fox Glacier</div>
+                <img src="./img/glacier.jpg" alt="" srcset="" style="object-position:left" class="article_mobile_img">
+                <div class="subtext">
+                    Named after Sir William Fox, New Zealand’s Prime Minister from 1869 to 1872, Fox Glacier describes
+                    both the glacier and the nearby village. Like its twin, Franz Josef, the glacier descends from the
+                    Southern Alps down into temperate rainforest just 300 metres above sea level.
+
+                    To see the glacier, you can head towards Lake Matheson on Cook Flat Road for magnificent views. You
+                    can arrange an ice-hiking adventure or booking a scenic flight. There are glow worm caves just a
+                    short walk from the town centre, which offers a good choice of cafes and restaurants. Close to Fox
+                    Glacier is beautiful Lake Matheson, one of the most photographed lakes in New Zealand. On a clear
+                    day it reflects Mount Cook.
+                </div>
+            </div>
+            <img src="./img/glacier.jpg" alt="" srcset="" style="object-position:left" class="article_web_img">
+        </div>
+    </div>
+    <div id="stay">
+        <div class="stay_bg">
+            <div class="visu_text">Stay<br>New Zealand</div>            
+        </div>
+        <div id="item_list_container">
+
+            <div id="item_list">
+
+                <div class="items">
+                    <div class="item">
+                        <img src="./img/house.jpg" alt="" srcset="" class="item_img">
+                        <div class="item_desc">
+                            <div class="item_title">House</div>
+                            <div class="item_subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                                dolores
+                                accusantium rem voluptatum laborum quas ratione placeat minus veritatis nesciunt.</div>
+
+                            <div class="item_icon">
+                                <div class="item_pp">
+                                    <i class="far fa-user"></i>
+                                    <span class="min_p">2</span> - <span class="max_p">4</s> pp
+                                </div>
+                                <div class="item_night">
+                                    <i class="far fa-calendar"></i>
+                                    min <span class="min_n">2</span> / max <span class="max_n">10</span> night
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_right">
+                            <div class="item_price">$<span class="price">240</span></div>
+                            <!--mobile-->
+                            <div class="mobile_item_buttom">
+                                <div class="item_pp">
+                                    <i class="far fa-user"></i>
+                                    <span class="mobile_min_p">2</span> - <span class="mobile_max_p">4</span> pp
+                                </div>
+                                <div class="item_night">
+                                    <i class="far fa-calendar"></i>
+                                    min <span class="mobile_min_n">2</span> / max <span class="mobile_max_n">10</span> night
+                                </div>
+                                <div class="mobile_item_price">$<span class="mobile_price">240</span></div>
+                            </div>
+                            <!--mobileEnd-->
+                            <div class="item_booking">Make booking</div>
+                        </div>
+                    </div>
+
+
+                    <!--Mobile-->
+
+                    
+                    <div class="mobile_item_booking">Make booking</div>
+                </div>
+
+                <div class="items">
+                    <div class="item">
+                        <img src="./img/house.jpg" alt="" srcset="" class="item_img">
+                        <div class="item_desc">
+                            <div class="item_title">House</div>
+                            <div class="item_subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                                dolores
+                                accusantium rem voluptatum laborum quas ratione placeat minus veritatis nesciunt.</div>
+
+                            <div class="item_icon">
+                                <div class="item_pp">
+                                    <i class="far fa-user"></i>
+                                    <span class="min_p">2</span> - <span class="max_p">4</s> pp
+                                </div>
+                                <div class="item_night">
+                                    <i class="far fa-calendar"></i>
+                                    min <span class="min_n">2</span> / max <span class="max_n">10</span> night
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_right">
+                            <div class="item_price">$<span class="price">240</span></div>
+                            <!--mobile-->
+                            <div class="mobile_item_buttom">
+                                <div class="item_pp">
+                                    <i class="far fa-user"></i>
+                                    <span class="mobile_min_p">2</span> - <span class="mobile_max_p">4</span> pp
+                                </div>
+                                <div class="item_night">
+                                    <i class="far fa-calendar"></i>
+                                    min <span class="mobile_min_n">2</span> / max <span class="mobile_max_n">10</span> night
+                                </div>
+                                <div class="mobile_item_price">$<span class="mobile_price">240</span></div>
+                            </div>
+                            <!--mobileEnd-->
+                            <div class="item_booking">Make booking</div>
+                        </div>
+                    </div>
+
+
+                    <!--Mobile-->
+
+                    
+                    <div class="mobile_item_booking">Make booking</div>
+                </div>
+
+                <div class="items">
+                    <div class="item">
+                        <img src="./img/house.jpg" alt="" srcset="" class="item_img">
+                        <div class="item_desc">
+                            <div class="item_title">House</div>
+                            <div class="item_subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                                dolores
+                                accusantium rem voluptatum laborum quas ratione placeat minus veritatis nesciunt.</div>
+
+                            <div class="item_icon">
+                                <div class="item_pp">
+                                    <i class="far fa-user"></i>
+                                    <span class="min_p">2</span> - <span class="max_p">4</s> pp
+                                </div>
+                                <div class="item_night">
+                                    <i class="far fa-calendar"></i>
+                                    min <span class="min_n">2</span> / max <span class="max_n">10</span> night
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_right">
+                            <div class="item_price">$<span class="price">240</span></div>
+                            <!--mobile-->
+                            <div class="mobile_item_buttom">
+                                <div class="item_pp">
+                                    <i class="far fa-user"></i>
+                                    <span class="mobile_min_p">2</span> - <span class="mobile_max_p">4</span> pp
+                                </div>
+                                <div class="item_night">
+                                    <i class="far fa-calendar"></i>
+                                    min <span class="mobile_min_n">2</span> / max <span class="mobile_max_n">10</span> night
+                                </div>
+                                <div class="mobile_item_price">$<span class="mobile_price">240</span></div>
+                            </div>
+                            <!--mobileEnd-->
+                            <div class="item_booking">Make booking</div>
+                        </div>
+                    </div>
+
+
+                    <!--Mobile-->
+
+                    
+                    <div class="mobile_item_booking">Make booking</div>
+                </div>
+
+                <div class="items">
+                    <div class="item">
+                        <img src="./img/house.jpg" alt="" srcset="" class="item_img">
+                        <div class="item_desc">
+                            <div class="item_title">House</div>
+                            <div class="item_subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                                dolores
+                                accusantium rem voluptatum laborum quas ratione placeat minus veritatis nesciunt.</div>
+
+                            <div class="item_icon">
+                                <div class="item_pp">
+                                    <i class="far fa-user"></i>
+                                    <span class="min_p">2</span> - <span class="max_p">4</s> pp
+                                </div>
+                                <div class="item_night">
+                                    <i class="far fa-calendar"></i>
+                                    min <span class="min_n">2</span> / max <span class="max_n">10</span> night
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_right">
+                            <div class="item_price">$<span class="price">240</span></div>
+                            <!--mobile-->
+                            <div class="mobile_item_buttom">
+                                <div class="item_pp">
+                                    <i class="far fa-user"></i>
+                                    <span class="mobile_min_p">2</span> - <span class="mobile_max_p">4</span> pp
+                                </div>
+                                <div class="item_night">
+                                    <i class="far fa-calendar"></i>
+                                    min <span class="mobile_min_n">2</span> / max <span class="mobile_max_n">10</span> night
+                                </div>
+                                <div class="mobile_item_price">$<span class="mobile_price">240</span></div>
+                            </div>
+                            <!--mobileEnd-->
+                            <div class="item_booking">Make booking</div>
+                        </div>
+                    </div>
+
+
+                    <!--Mobile-->
+
+                    
+                    <div class="mobile_item_booking">Make booking</div>
+                </div>
+
+                <div class="items">
+                    <div class="item">
+                        <img src="./img/house.jpg" alt="" srcset="" class="item_img">
+                        <div class="item_desc">
+                            <div class="item_title">House</div>
+                            <div class="item_subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                                dolores
+                                accusantium rem voluptatum laborum quas ratione placeat minus veritatis nesciunt.</div>
+
+                            <div class="item_icon">
+                                <div class="item_pp">
+                                    <i class="far fa-user"></i>
+                                    <span class="min_p">2</span> - <span class="max_p">4</s> pp
+                                </div>
+                                <div class="item_night">
+                                    <i class="far fa-calendar"></i>
+                                    min <span class="min_n">2</span> / max <span class="max_n">10</span> night
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_right">
+                            <div class="item_price">$<span class="price">240</span></div>
+                            <!--mobile-->
+                            <div class="mobile_item_buttom">
+                                <div class="item_pp">
+                                    <i class="far fa-user"></i>
+                                    <span class="mobile_min_p">2</span> - <span class="mobile_max_p">4</span> pp
+                                </div>
+                                <div class="item_night">
+                                    <i class="far fa-calendar"></i>
+                                    min <span class="mobile_min_n">2</span> / max <span class="mobile_max_n">10</span> night
+                                </div>
+                                <div class="mobile_item_price">$<span class="mobile_price">240</span></div>
+                            </div>
+                            <!--mobileEnd-->
+                            <div class="item_booking">Make booking</div>
+                        </div>
+                    </div>
+
+
+                    <!--Mobile-->
+
+                    
+                    <div class="mobile_item_booking">Make booking</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL--->
+    <div id="overlay_container" class="hidden">
+        <div class="modal_content">
+            <img src="./img/house.jpg" alt="" class="overlay_img" id="overlay_img">
+            <div class="modal_desc">
+
+                <div class="price_calculator">           
+
+                    <form id="landing_form">
+                        <div class="date_container">
+                            <div class="dateInput">
+                                <label for="checkIn">Check In : </label>
+                                <input type="date" name="checkIn" id="checkIn" required>
+                            </div>
+                            <div class="dateInput">
+                                <label for="checkOut">Check Out : </label>
+                                <input type="date" name="checkOut" id="checkOut" required>
+                            </div>
+                        </div>
+                        <div class="guestInput">
+                            <label for="guest_number">Guests : </label>
+                            <input type="number" name="guest_number" id="guest_number" min="2" max="4" required>
+                        </div>
+                        <button type="submit" class="bt_submit">Check price</button>
+                    </form>
+
+                    <section id="result">
+                        <div class="result_daysGuests">
+                            <div>
+                                <span>Number of nights: </span>
+                                <span id="days"></span>
+                            </div>
+                            <div>
+                                <span>Number of Guests: </span>
+                                <span id="guests"></span>
+                            </div>
+                        </div>
+
+                        <div class="totalPrice">
+                            <span>Total Price: </span>
+                            <span id="price"></span>
+                        </div>
+                    </section>
+
+
+                </div>
+
+                <div class="modal_item_desc">
+                    <div class="modal_item_title" id="modal_item_title">House</div>
+                    <div class="modal item_subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Quidem
+                        dolores
+                        accusantium rem voluptatum laborum quas ratione placeat minus veritatis nesciunt.
+                    </div>
+
+                    <div class="modal_item_icon">
+                        <div class="item_pp">
+                            <i class="far fa-user"></i>
+                            <span class="modal_min_p" id="modal_min_p">2</span> - <span class="modal_max_p"
+                                id="modal_max_p">4</span> pp
+                        </div>
+                        <div class="item_night">
+                            <i class="far fa-calendar"></i>
+                            min <span class="modal_min_n" id="modal_min_n">2</span> / max <span class="modal_max_n"
+                                id="modal_max_n">10</span> night
+                        </div>
+                        <div class="modalp_item_price">$<span id="modal_price">240</span>
+                            <span id="modal_price_txt">/night</span>
+                        </div>
+                    </div>
+                    <div id="bt_reserve">Reserve the Room</div>
+                </div>
+            </div>
+            <div id="modal_x"><i class="fas fa-times"></i></div>
+        </div>
+
+    </div>
+    <div id="contact">
+        <div class="contact_visu_text">Contact Us</div> 
+        <form action="">
+            <input type="text" id="contact_name" placeholder="Name">
+            <input type="email" id ="contact_email" placeholder="E-mail">
+            <textarea form="contact" rows="10" cols="10" id="contact_message" placeholder="message"></textarea>
+            <input type="submit" value="Submit" id="contact_submit">
+        </form>
+        <div class="sns">
+            <img src="./img/sns_f.png" alt="">
+            <img src="./img/sns_i.png" alt="">
+            <img src="./img/sns_y.png" alt="">
+        </div>
+        <div id="contact_logo"><img src="./img/logo.png"></div>
+    </div>
+
+
+    <script src="./nztour.js"></script>
+</body>
+
+</html>
